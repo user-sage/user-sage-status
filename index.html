@@ -319,7 +319,9 @@
         const yearEl = document.getElementById('current-year');
         if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-        const STATUS_API = 'https://usersage.com/api/admin?resource=status';
+        // The backend's public status read. usersage.com is the app domain and does not
+        // proxy /api to the backend, so this must name api.usersage.com directly.
+        const STATUS_API = 'https://api.usersage.com/api/status';
 
         const DEFAULT_STATE = {
           overallStatus: 'operational',
