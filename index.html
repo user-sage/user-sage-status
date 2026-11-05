@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Live uptime and incident status for User Sage. See whether the app, API, auth, and AI panels are operational, and read past incident updates." />
     <title>User Sage Status</title>
+    <link rel="icon" href="https://usersage.com/favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link rel="icon" href="https://usersage.com/icon.svg" sizes="any" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="https://usersage.com/apple-icon.png" sizes="180x180" type="image/png" />
     <style>
       :root {
         --bg: #f5f7fb;
@@ -71,7 +74,6 @@
         text-transform: uppercase;
       }
       .topbar {
-        border-bottom: 1px solid var(--line);
         padding-bottom: 18px;
         margin-bottom: 24px;
       }
@@ -117,6 +119,9 @@
         margin-top: 42px;
         border-top: 1px solid var(--line);
         padding-top: 22px;
+      }
+      section:first-of-type {
+        border-top: none;
       }
       h1, h2 {
         font-size: clamp(2rem, 2.5vw, 3rem);
@@ -241,19 +246,19 @@
         </div>
       </div>
 
-      <div class="status-banner">
-        <div class="status-row">
-          <div class="status-chip"><span class="dot"></span>All systems operational</div>
-          <div class="updated">Updated: just now</div>
-        </div>
-      </div>
-
       <section>
         <h1>Public uptime and incident status</h1>
         <p class="lede">
            Check real-time availability for key User Sage services, incident updates, and planned maintenance.
         </p>
       </section>
+
+      <div class="status-banner">
+        <div class="status-row">
+          <div class="status-chip"><span class="dot"></span>All systems operational</div>
+          <div class="updated">Updated: just now</div>
+        </div>
+      </div>
 
       <section>
         <h2>Service health</h2>
@@ -309,6 +314,8 @@
         <div class="links">
           <a href="https://usersage.com/privacy">Privacy Policy</a>
           <a href="https://usersage.com/terms">Terms of Service</a>
+          <a href="https://usersage.com/security">Security</a>
+          <a href="https://usersage.com/accessibility">Accessibility</a>
           <a href="https://usersage.com">User Sage</a>
         </div>
       </div>
